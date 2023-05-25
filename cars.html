@@ -1,0 +1,515 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>available Cars </title>
+    <!-- font awesome link  -->
+    <script src="https://kit.fontawesome.com/9a0c28a3b4.js" crossorigin="anonymous"></script>
+    <!-- custom css link  -->
+    <link rel="stylesheet" href="style.css" />
+</head>
+
+<body>
+    <header>
+        <div class="left-nav">
+            <div class="logo">.Carzz</div>
+
+            <div class="right">
+                <div class="hamburger">
+                    <i class="fa-solid fa-bars"></i>
+                </div>
+            </div>
+
+
+        </div>
+        <nav class="right-nav">
+            <ul class="nav-list">
+                <li><a class="list-item " href="index.html">Home</a></li>
+                <li><a class="list-item active" href="cars.html">Cars</a></li>
+                <li><a class="list-item" href="branches.html">Branches</a></li>
+                <li><a class="list-item" href="loginpage.html">Login/Sign in</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <div class="car-filter-section">
+
+        <!-- filter is a side bar  -->
+        <div class="filter-cars">
+
+            <div class="cars-left-container">
+                <div class="filter-container">
+                    <div class="main-filter-title">Filter</div>
+                    <div class="brands-filter">
+                        <div class="filter-title">Cars Brands</div>
+                        <button class="filter-btn" data-filter="VokesWagon">VokesWagon</button>
+                        <button class="filter-btn" data-filter="Suzuki">Suzuki</button>
+                        <button class="filter-btn" data-filter="Mahendra">Mahendra</button>
+                        <button class="filter-btn" data-filter="Tata">Tata</button>
+                        <button class="filter-btn" data-filter="Kia">Kia</button>
+                    </div>
+                    <div class="brands-filter">
+                        <div class="filter-title">Price range</div>
+                        <button class="filter-btn">low to high</button>
+                        <button class="filter-btn">high to low</button>
+                    </div>
+                    <div class="brands-filter">
+                        <div class="filter-title">fuel type</div>
+                        <button class="filter-btn">petrol</button>
+                        <button class="filter-btn">diesel</button>
+                    </div>
+                </div>
+            </div>
+
+
+            <!-- cars container is main container  -->
+            <div class="cars-container">
+                <h2 class="cars-title">Available Cars</h2>
+                <div class="show-luxury-cars-btn">Show Luxury Cars</div>
+                <div class="available-cars-container">
+
+
+                    <div class="car-box">
+                        <div class="car-img">
+                            <img src="cars/kiaSeltos.jpg" alt="">
+                        </div>
+                        <div class="car-desc">
+                            <div class="car-desc-1">
+                                <p class="available-car-title">Kia seltos</p>
+                                <p class="car-price">&#8377; 6500</p>
+                            </div>
+                            <div class="car-desc-1">
+                                <i class="fa-regular fa-heart" id="heart"></i>
+                                <p class="car-price">5 seater manual petrol</p>
+                            </div>
+                        </div>
+                        <button class="reserve-btn">Reserve Now</button>
+                    </div>
+
+                    <div class="car-box">
+                        <div class="car-img">
+                            <img src="cars/kiaCarnival.jpg" alt="">
+                        </div>
+                        <div class="car-desc">
+                            <div class="car-desc-1">
+                                <p class="available-car-title">Kia carnival</p>
+                                <p class="car-price">&#8377; 8500</p>
+                            </div>
+                            <div class="car-desc-1">
+                                <i class="fa-regular fa-heart" id="heart"></i>
+                                <p class="car-price">7 seater auto petrol</p>
+                            </div>
+                        </div>
+                        <button class="reserve-btn">Reserve Now</button>
+                    </div>
+
+                    <div class="car-box">
+                        <div class="car-img">
+                            <img src="cars/kiaSonet.jpg" alt="">
+                        </div>
+                        <div class="car-desc">
+                            <div class="car-desc-1">
+                                <p class="available-car-title">Kia Sonet</p>
+                                <p class="car-price">&#8377; 6500</p>
+                            </div>
+                            <div class="car-desc-1">
+                                <i class="fa-regular fa-heart" id="heart"></i>
+                                <p class="car-price">5 seater manual petrol</p>
+                            </div>
+                        </div>
+                        <button class="reserve-btn">Reserve Now</button>
+                    </div>
+
+                    <div class="car-box">
+                        <div class="car-img">
+                            <img src="cars/suzukiSwift.jpg" alt="">
+                        </div>
+                        <div class="car-desc">
+                            <div class="car-desc-1">
+                                <p class="available-car-title">Suzuki Swift</p>
+                                <p class="car-price">&#8377; 1700</p>
+                            </div>
+                            <div class="car-desc-1">
+                                <i class="fa-regular fa-heart" id="heart"></i>
+                                <p class="car-price">4 seater manual diesel</p>
+                            </div>
+                        </div>
+                        <button class="reserve-btn">Reserve Now</button>
+                    </div>
+
+
+
+                    <div class="car-box">
+                        <div class="car-img">
+                            <img src="cars/suzukiBreeza.jpg" alt="">
+                        </div>
+                        <div class="car-desc">
+                            <div class="car-desc-1">
+                                <p class="available-car-title">Kia seltos</p>
+                                <p class="car-price">&#8377; 3500</p>
+                            </div>
+                            <div class="car-desc-1">
+                                <i class="fa-regular fa-heart" id="heart"></i>
+                                <p class="car-price">5 seater manual diesel</p>
+                            </div>
+                        </div>
+                        <button class="reserve-btn">Reserve Now</button>
+                    </div>
+
+                    <div class="car-box">
+                        <div class="car-img">
+                            <img src="cars/ertiga.jpg" alt="">
+                        </div>
+                        <div class="car-desc">
+                            <div class="car-desc-1">
+                                <p class="available-car-title">Kia seltos</p>
+                                <p class="car-price">&#8377; 3500</p>
+                            </div>
+                            <div class="car-desc-1">
+                                <i class="fa-regular fa-heart" id="heart"></i>
+                                <p class="car-price">7 seater manual petrol</p>
+                            </div>
+                        </div>
+                        <button class="reserve-btn">Reserve Now</button>
+                    </div>
+
+                    <div class="car-box">
+                        <div class="car-img">
+                            <img src="cars/dzire.jpg" alt="">
+                        </div>
+                        <div class="car-desc">
+                            <div class="car-desc-1">
+                                <p class="available-car-title">Suzuki Dzire</p>
+                                <p class="car-price">&#8377; 3000</p>
+                            </div>
+                            <div class="car-desc-1">
+                                <i class="fa-regular fa-heart" id="heart"></i>
+                                <p class="car-price">5 seater manual petrol</p>
+                            </div>
+                        </div>
+                        <button class="reserve-btn">Reserve Now</button>
+                    </div>
+
+                    <div class="car-box">
+                        <div class="car-img">
+                            <img src="cars/fornx.webp" alt="">
+                        </div>
+                        <div class="car-desc">
+                            <div class="car-desc-1">
+                                <p class="available-car-title">Suzuki fornx</p>
+                                <p class="car-price">&#8377; 4000</p>
+                            </div>
+                            <div class="car-desc-1">
+                                <i class="fa-regular fa-heart" id="heart"></i>
+                                <p class="car-price">5 seater manual petrol</p>
+                            </div>
+                        </div>
+                        <button class="reserve-btn">Reserve Now</button>
+                    </div>
+
+
+
+                    <div class="car-box">
+                        <div class="car-img">
+                            <img src="cars/baleno.webp" alt="">
+                        </div>
+                        <div class="car-desc">
+                            <div class="car-desc-1">
+                                <p class="available-car-title">Suzuki Baleno</p>
+                                <p class="car-price">&#8377; 6500</p>
+                            </div>
+                            <div class="car-desc-1">
+                                <i class="fa-regular fa-heart" id="heart"></i>
+                                <p class="car-price">5 seater manual petrol</p>
+                            </div>
+                        </div>
+                        <button class="reserve-btn">Reserve Now</button>
+                    </div>
+
+                    <div class="car-box">
+                        <div class="car-img">
+                            <img src="cars/Mkuv100.jpg" alt="">
+                        </div>
+                        <div class="car-desc">
+                            <div class="car-desc-1">
+                                <p class="available-car-title">KUV100</p>
+                                <p class="car-price">&#8377; 3000</p>
+                            </div>
+                            <div class="car-desc-1">
+                                <i class="fa-regular fa-heart" id="heart"></i>
+                                <p class="car-price">5 seater manual petrol</p>
+                            </div>
+                        </div>
+                        <button class="reserve-btn">Reserve Now</button>
+                    </div>
+
+                    <div class="car-box">
+                        <div class="car-img">
+                            <img src="cars/Mthar.webp" alt="">
+                        </div>
+                        <div class="car-desc">
+                            <div class="car-desc-1">
+                                <p class="available-car-title">Thar</p>
+                                <p class="car-price">&#8377; 8500</p>
+                            </div>
+                            <div class="car-desc-1">
+                                <i class="fa-regular fa-heart" id="heart"></i>
+                                <p class="car-price">4 seater manual petrol</p>
+                            </div>
+                        </div>
+                        <button class="reserve-btn">Reserve Now</button>
+                    </div>
+
+                    <div class="car-box">
+                        <div class="car-img">
+                            <img src="cars/Scarpio.webp" alt="">
+                        </div>
+                        <div class="car-desc">
+                            <div class="car-desc-1">
+                                <p class="available-car-title">Scorpio</p>
+                                <p class="car-price">&#8377; 6500</p>
+                            </div>
+                            <div class="car-desc-1">
+                                <i class="fa-regular fa-heart" id="heart"></i>
+                                <p class="car-price">5 seater manual petrol</p>
+                            </div>
+                        </div>
+                        <button class="reserve-btn">Reserve Now</button>
+                    </div>
+
+                    <div class="car-box">
+                        <div class="car-img">
+                            <img src="cars/xuv700.webp" alt="">
+                        </div>
+                        <div class="car-desc">
+                            <div class="car-desc-1">
+                                <p class="available-car-title">XUV 700</p>
+                                <p class="car-price">&#8377; 8500</p>
+                            </div>
+                            <div class="car-desc-1">
+                                <i class="fa-regular fa-heart" id="heart"></i>
+                                <p class="car-price">5 seater manual petrol</p>
+                            </div>
+                        </div>
+                        <button class="reserve-btn">Reserve Now</button>
+                    </div>
+
+                    <div class="car-box">
+                        <div class="car-img">
+                            <img src="cars/virtus.webp" alt="">
+                        </div>
+                        <div class="car-desc">
+                            <div class="car-desc-1">
+                                <p class="available-car-title">virtus</p>
+                                <p class="car-price">&#8377; 8500</p>
+                            </div>
+                            <div class="car-desc-1">
+                                <i class="fa-regular fa-heart" id="heart"></i>
+                                <p class="car-price">5 seater manual petrol</p>
+                            </div>
+                        </div>
+                        <button class="reserve-btn">Reserve Now</button>
+                    </div>
+
+                    <div class="car-box">
+                        <div class="car-img">
+                            <img src="cars/tiagun.webp" alt="">
+                        </div>
+                        <div class="car-desc">
+                            <div class="car-desc-1">
+                                <p class="available-car-title">tiagun</p>
+                                <p class="car-price">&#8377; 5500</p>
+                            </div>
+                            <div class="car-desc-1">
+                                <i class="fa-regular fa-heart" id="heart"></i>
+                                <p class="car-price">5 seater manual petrol</p>
+                            </div>
+                        </div>
+                        <button class="reserve-btn">Reserve Now</button>
+                    </div>
+
+                    <div class="car-box">
+                        <div class="car-img">
+                            <img src="cars/polo.webp" alt="">
+                        </div>
+                        <div class="car-desc">
+                            <div class="car-desc-1">
+                                <p class="available-car-title">polo</p>
+                                <p class="car-price">&#8377; 4500</p>
+                            </div>
+                            <div class="car-desc-1">
+                                <i class="fa-regular fa-heart" id="heart"></i>
+                                <p class="car-price">5 seater manual petrol</p>
+                            </div>
+                        </div>
+                        <button class="reserve-btn">Reserve Now</button>
+                    </div>
+
+                    <div class="car-box">
+                        <div class="car-img">
+                            <img src="cars/nexon.webp" alt="">
+                        </div>
+                        <div class="car-desc">
+                            <div class="car-desc-1">
+                                <p class="available-car-title">Tata Nexon</p>
+                                <p class="car-price">&#8377; 4000</p>
+                            </div>
+                            <div class="car-desc-1">
+                                <i class="fa-regular fa-heart" id="heart"></i>
+                                <p class="car-price">5 seater manual petrol</p>
+                            </div>
+                        </div>
+                        <button class="reserve-btn">Reserve Now</button>
+                    </div>
+
+                    <div class="car-box">
+                        <div class="car-img">
+                            <img src="cars/punch.webp" alt="">
+                        </div>
+                        <div class="car-desc">
+                            <div class="car-desc-1">
+                                <p class="available-car-title">Tata punch</p>
+                                <p class="car-price">&#8377; 2500</p>
+                            </div>
+                            <div class="car-desc-1">
+                                <i class="fa-regular fa-heart" id="heart"></i>
+                                <p class="car-price">5 seater manual petrol</p>
+                            </div>
+                        </div>
+                        <button class="reserve-btn">Reserve Now</button>
+                    </div>
+
+                    <div class="car-box">
+                        <div class="car-img">
+                            <img src="cars/harrier.webp" alt="">
+                        </div>
+                        <div class="car-desc">
+                            <div class="car-desc-1">
+                                <p class="available-car-title">Tata harrier</p>
+                                <p class="car-price">&#8377; 7000</p>
+                            </div>
+                            <div class="car-desc-1">
+                                <i class="fa-regular fa-heart" id="heart"></i>
+                                <p class="car-price">7 seater manual petrol</p>
+                            </div>
+                        </div>
+                        <button class="reserve-btn">Reserve Now</button>
+                    </div>
+
+                    <div class="car-box">
+                        <div class="car-img">
+                            <img src="cars/altroz.jpg" alt="">
+                        </div>
+                        <div class="car-desc">
+                            <div class="car-desc-1">
+                                <p class="available-car-title">Altroz</p>
+                                <p class="car-price">&#8377; 2000</p>
+                            </div>
+                            <div class="car-desc-1">
+                                <i class="fa-regular fa-heart" id="heart"></i>
+                                <p class="car-price">5 seater manual petrol</p>
+                            </div>
+                        </div>
+                        <button class="reserve-btn">Reserve Now</button>
+                    </div>
+
+                    <div class="car-box">
+                        <div class="car-img">
+                            <img src="cars/tiago.jpg" alt="">
+                        </div>
+                        <div class="car-desc">
+                            <div class="car-desc-1">
+                                <p class="available-car-title">Tiago</p>
+                                <p class="car-price">&#8377; 1700</p>
+                            </div>
+                            <div class="car-desc-1">
+                                <i class="fa-regular fa-heart" id="heart"></i>
+                                <p class="car-price">5 seater manual petrol</p>
+                            </div>
+                        </div>
+                        <button class="reserve-btn">Reserve Now</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+    <footer>
+        <div class="left-footer">
+            <div class="left-footer-title">
+                <h3 class="footer-title-logo">.Carzz</h3>
+                <h3 class="footer-title">Automative Cars</h3>
+                <p class="footer-desc">Lorem ipsum dolor sit amet consectetur adipisicing.</p>
+            </div>
+            <div class="left-footer-icons">
+                <i class="fa-brands fa-facebook"></i>
+                <i class="fa-brands fa-instagram"></i>
+                <i class="fa-brands fa-linkedin"></i>
+                <i class="fa-brands fa-telegram"></i>
+            </div>
+            <p class="footer-desc">Copyright &copy; Nikhil Sai</p>
+        </div>
+
+        <div class="right-footer">
+            <div class="right-footer-section">
+                <h3 class="right-footer-title">About US</h3>
+                <ul>
+                    <li>company information</li>
+                    <li>Press Center</li>
+                    <li>Careers</li>
+                    <li>Contract PR</li>
+                </ul>
+            </div>
+
+            <div class="right-footer-section">
+                <h3 class="right-footer-title">Portals</h3>
+                <ul>
+                    <li>Tomtom taffic index</li>
+                    <li>Tomtom My driver</li>
+                    <li>City</li>
+                    <li>About</li>
+                </ul>
+            </div>
+
+            <div class="right-footer-section">
+                <h3 class="right-footer-title">Business</h3>
+                <ul>
+                    <li>Consumer</li>
+                    <li>Telematics</li>
+                    <li>Maps</li>
+                    <li>Bridges</li>
+                </ul>
+            </div>
+
+            <div class="right-footer-section">
+                <h3 class="right-footer-title">Legal</h3>
+                <ul>
+                    <li>Privacy Policy</li>
+                    <li>Terms and Conditions</li>
+                    <li>Legal Information</li>
+                    <li>Legal Information</li>
+                </ul>
+            </div>
+
+        </div>
+
+    </footer>
+
+    <script src="Js files/app.js">
+
+    </script>
+    <script>
+        //opening luxury cars page 
+        const openLuxuryCarsPage = document.querySelector(".show-luxury-cars-btn")
+
+        openLuxuryCarsPage.addEventListener("click", () => {
+            window.open('luxuryCars.html',"_self");
+        })
+    </script>
+</body>
+
+</html>

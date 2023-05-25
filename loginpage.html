@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- font awesome link  -->
+  <script src="https://kit.fontawesome.com/9a0c28a3b4.js" crossorigin="anonymous"></script>
+  <!-- custom css link  -->
+  <link rel="stylesheet" href="style.css" />
+  <title>.Carzz LogIn/SignIn</title>
+</head>
+
+<body>
+  <header>
+    <div class="left-nav">
+      <div class="logo">.Carzz</div>
+      <div class="hamburger">
+        <i class="fa-solid fa-bars"></i>
+      </div>
+    </div>
+    <nav class="right-nav">
+      <ul class="nav-list">
+        <li><a class="list-item" href="index.html">Home</a></li>
+        <li><a class="list-item" href="cars.html">Cars</a></li>
+        <li><a class="list-item" href="branches.html">Branches</a></li>
+        <li><a class="list-item active" href="loginpage.html">Login/Sign in</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <section class="login-signin-section">
+    <div class="login-container">
+      <div class="login-title">Login</div>
+      <div class="login-box">
+        <form action="#" class="input-form">
+          <label for="username-input" class="input-container">
+            <i class="fa-solid fa-user"></i>
+            <input type="text" class="username-input" placeholder="User Name">
+          </label>
+          <label for="Password-input" class="input-container">
+            <i class="fa-sharp fa-solid fa-key"></i>
+            <input type="password" class="username-input" placeholder="Password">
+          </label>
+          <button class="login-btn">Login</button>
+        </form>
+      </div>
+      <p class="signin-nav">Dont Have Account? <span class="signin-page-nav">Sigh In</span></p>
+      <p class="signin-nav">or Sign up with</p>
+      <div class="signin-icons-container">
+        <i class="fa-brands fa-google"></i>
+        <i class="fa-brands fa-twitter"></i>
+        <i class="fa-brands fa-facebook"></i>
+      </div>
+    </div>
+    <div class="signin-container">
+      <div class="login-title signin-title">Sign in</div>
+      <div class="login-box">
+        <form action="#" class="input-form">
+          <label for="username-input" class="input-container">
+            <i class="fa-solid fa-user"></i>
+            <input type="text" class="username-input" placeholder="User Name">
+          </label>
+          <label for="Password-input" class="input-container">
+            <i class="fa-sharp fa-solid fa-key"></i>
+            <input type="password" class="username-input" placeholder="Password">
+          </label>
+          <label for="Password-input" class="input-container">
+            <i class="fa-sharp fa-solid fa-key"></i>
+            <input type="password" class="username-input" placeholder="confirm Password">
+          </label>
+          <button class="login-btn">Login</button>
+        </form>
+      </div>
+      <p class="signin-nav">Already Have Account? <span class="login-page-nav">login In</span></p>
+    </div>
+  </section>
+
+  <footer>
+    <div class="left-footer">
+      <div class="left-footer-title">
+        <h3 class="footer-title-logo">.Carzz</h3>
+        <h3 class="footer-title">Automative Cars</h3>
+        <p class="footer-desc">Lorem ipsum dolor sit amet consectetur adipisicing.</p>
+      </div>
+      <div class="left-footer-icons">
+        <i class="fa-brands fa-facebook"></i>
+        <i class="fa-brands fa-instagram"></i>
+        <i class="fa-brands fa-linkedin"></i>
+        <i class="fa-brands fa-telegram"></i>
+      </div>
+      <p class="footer-desc">Copyright &copy; Nikhil Sai</p>
+    </div>
+
+    <div class="right-footer">
+      <div class="right-footer-section">
+        <h3 class="right-footer-title">About US</h3>
+        <ul>
+          <li>company information</li>
+          <li>Press Center</li>
+          <li>Careers</li>
+          <li>Contract PR</li>
+        </ul>
+      </div>
+
+      <div class="right-footer-section">
+        <h3 class="right-footer-title">Portals</h3>
+        <ul>
+          <li>Tomtom taffic index</li>
+          <li>Tomtom My driver</li>
+          <li>City</li>
+          <li>About</li>
+        </ul>
+      </div>
+
+      <div class="right-footer-section">
+        <h3 class="right-footer-title">Business</h3>
+        <ul>
+          <li>Consumer</li>
+          <li>Telematics</li>
+          <li>Maps</li>
+          <li>Bridges</li>
+        </ul>
+      </div>
+
+      <div class="right-footer-section">
+        <h3 class="right-footer-title">Legal</h3>
+        <ul>
+          <li>Privacy Policy</li>
+          <li>Terms and Conditions</li>
+          <li>Legal Information</li>
+          <li>Legal Information</li>
+        </ul>
+      </div>
+
+    </div>
+
+  </footer>
+  <script src="Js files/app.js"></script>
+  <script>
+
+    // toggle between login page and sign in page 
+
+    const loginPageNav = document.querySelector(".login-page-nav");
+    const sigininPageNav = document.querySelector(".signin-page-nav");
+    const loginContainer = document.querySelector(".login-container")
+    const signinContainer = document.querySelector(".signin-container")
+
+    loginPageNav.addEventListener("click", () => {
+      loginContainer.style.display = "flex";
+      signinContainer.style.display = "none";
+    })
+
+    sigininPageNav.addEventListener("click", () => {
+      signinContainer.style.display = "flex";
+      loginContainer.style.display = "none";
+    })
+
+  </script>
+</body>
+
+</html>
